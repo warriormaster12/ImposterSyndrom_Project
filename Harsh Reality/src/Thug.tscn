@@ -4,23 +4,22 @@
 [ext_resource path="res://src/Thug.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 24.8232
+radius = 8.0
 height = 13.6898
 
 [node name="Thug" type="KinematicBody2D"]
+position = Vector2( -8, 0 )
 collision_layer = 4
 collision_mask = 16
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 speed = Vector2( 100, 500 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 32, 32 )
+position = Vector2( 16, 16 )
+scale = Vector2( 0.375, 0.375 )
 texture = ExtResource( 1 )
 flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 32, 32 )
+position = Vector2( 16, 16 )
 shape = SubResource( 1 )

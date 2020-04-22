@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/testtiles.tres" type="TileSet" id=1]
 [ext_resource path="res://src/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Thug.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Hero.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -16,7 +17,9 @@ tile_data = PoolIntArray( -131069, 0, 0, -131068, 0, 0, -131067, 0, 0, -131066, 
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 320, 160 )
-collision_mask = 16
 
 [node name="Thug" parent="." instance=ExtResource( 3 )]
 position = Vector2( 896, 192 )
+
+[node name="Hero" parent="." instance=ExtResource( 4 )]
+position = Vector2( 383.156, 273.745 )
