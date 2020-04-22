@@ -1,23 +1,24 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/Slavic Woman/Slavic Woman/Woman_Run.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://assets/Alex/SpriteAnim.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://src/player.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 16 )
+extents = Vector2( 16.2203, 26.1912 )
 
 [node name="player" type="KinematicBody2D"]
 collision_mask = 16
 script = ExtResource( 2 )
 gravity = 1000.0
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.1, 0.1 )
+frames = ExtResource( 1 )
+animation = "Run"
+frame = 5
+playing = true
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8, 16 )
+position = Vector2( -0.951309, 11.7191 )
 shape = SubResource( 1 )
 one_way_collision_margin = 0.0
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 8, 16 )
-frames = ExtResource( 1 )
-frame = 2
-playing = true
