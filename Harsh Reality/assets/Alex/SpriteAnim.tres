@@ -96,6 +96,11 @@ animations = [ {
 "name": "Idle",
 "speed": 24.0
 }, {
+"frames": [ ExtResource( 83 ) ],
+"loop": true,
+"name": "IdlePistol",
+"speed": 1.0
+}, {
 "frames": [ ExtResource( 82 ), ExtResource( 80 ), ExtResource( 68 ), ExtResource( 81 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 75 ), ExtResource( 74 ), ExtResource( 78 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 79 ) ],
 "loop": true,
 "name": "Fire",
@@ -104,10 +109,5 @@ animations = [ {
 "frames": [ ExtResource( 43 ) ],
 "loop": true,
 "name": "Crouch",
-"speed": 1.0
-}, {
-"frames": [ ExtResource( 83 ) ],
-"loop": true,
-"name": "IdleFire",
 "speed": 1.0
 } ]

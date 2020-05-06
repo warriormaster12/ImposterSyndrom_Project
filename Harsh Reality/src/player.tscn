@@ -14,8 +14,7 @@ gravity = 1000.0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.1, 0.1 )
 frames = ExtResource( 1 )
-animation = "Run"
-frame = 2
+animation = "IdlePistol"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
