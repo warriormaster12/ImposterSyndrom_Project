@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/LevelAssets/StraightHallway/HallwayBase Color.png" type="Texture" id=1]
+[ext_resource path="res://assets/LevelAssets/StraightHallway/HallwayEmission.png" type="Texture" id=2]
+[ext_resource path="res://assets/LevelAssets/StraightHallway/StraightHallwayCol.tres" type="Shape" id=3]
+[ext_resource path="res://assets/LevelAssets/StraightHallway/StraightHallway.mesh" type="ArrayMesh" id=4]
+[ext_resource path="res://assets/LevelAssets/StraightHallway/Normal_normal.png" type="Texture" id=5]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 1 )
+emission_enabled = true
+emission = Color( 0.713726, 0.105882, 0.745098, 1 )
+emission_energy = 2.85
+emission_operator = 1
+emission_on_uv2 = false
+emission_texture = ExtResource( 2 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 5 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StraightHallway" type="MeshInstance" parent="."]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 0, 0, 0 )
+mesh = ExtResource( 4 )
+material/0 = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="StraightHallway"]
+
+[node name="CollisionShape" type="CollisionShape" parent="StraightHallway/StaticBody"]
+shape = ExtResource( 3 )
