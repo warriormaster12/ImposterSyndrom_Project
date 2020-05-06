@@ -1,3 +1,14 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/LevelAssets/LevelAssetsLibrary.meshlib" type="MeshLibrary" id=1]
 
 [node name="Spatial" type="Spatial"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+data = {
+"cells": PoolIntArray( 5, 65534, 538312704, 11, 65534, 1441792, 65535, 65534, 1441792 )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
