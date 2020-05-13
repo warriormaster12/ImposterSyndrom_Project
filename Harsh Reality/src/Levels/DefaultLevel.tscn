@@ -14,11 +14,7 @@ mesh_library = ExtResource( 6 )
 collision_layer = 16
 collision_mask = 0
 data = {
-<<<<<<< HEAD
 "cells": PoolIntArray( 65534, 5, 0, 65534, 11, 0, 65534, 17, 0, 65534, 65529, 0, 65534, 65535, 0 )
-=======
-"cells": PoolIntArray( 65534, 5, 0, 65534, 65535, 536870912 )
->>>>>>> 9c3daf82e6e1f4b5d43af0fde409299e82cdc6fc
 }
 __meta__ = {
 "_editor_clip_": 0
