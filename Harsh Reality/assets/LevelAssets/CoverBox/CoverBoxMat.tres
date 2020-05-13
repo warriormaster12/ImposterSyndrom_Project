@@ -7,7 +7,6 @@
 
 [sub_resource type="StreamTexture" id=1]
 flags = 7
-load_path = "res://.import/CoverBoxMat_Metallic.png-252de782232dfc56294ddd30e8c70548.s3tc.stex"
 
 [resource]
 albedo_texture = ExtResource( 1 )
