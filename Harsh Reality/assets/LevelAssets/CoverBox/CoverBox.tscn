@@ -11,7 +11,7 @@ points = PoolVector3Array( -0.908445, 0.801451, -1, -0.867248, -0.765106, -0.954
 [node name="Cube" parent="." index="0"]
 material/0 = ExtResource( 1 )
 
-[node name="StaticBody" type="StaticBody" parent="Cube" index="0"]
+[node name="KinematicBody" type="KinematicBody" parent="Cube" index="0"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Cube/StaticBody" index="0"]
+[node name="CollisionShape" type="CollisionShape" parent="Cube/KinematicBody" index="0"]
 shape = SubResource( 1 )

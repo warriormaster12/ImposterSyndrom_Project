@@ -17,5 +17,6 @@ transform = Transform( 1, 0, 0, 0, 2, 0, 0, 0, 1, 0, -1.10863, 0 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+shaded = true
 frames = ExtResource( 1 )
 animation = "Idle"
