@@ -6,7 +6,7 @@
 [node name="Level" type="Spatial"]
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.837357, 3.29009, 12.1283 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.837357, 3.29009, 24.9553 )
 
 [node name="GridMap" type="GridMap" parent="."]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 0 )
@@ -14,11 +14,11 @@ mesh_library = ExtResource( 6 )
 collision_layer = 16
 collision_mask = 0
 data = {
-"cells": PoolIntArray( 65534, 5, 0, 65534, 65535, 0 )
+"cells": PoolIntArray( 65534, 5, 0, 65534, 11, 0, 65534, 17, 0, 65534, 65529, 0, 65534, 65535, 0 )
 }
 __meta__ = {
 "_editor_clip_": 0
 }
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43984, 4.82813, -1.96957 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.142728, 5.53016, -2.48437 )
