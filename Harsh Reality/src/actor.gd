@@ -1,24 +1,24 @@
-extends KinematicBody2D
+extends KinematicBody
 class_name Actor
 
-export var speed: = Vector2(200.0, 500.0)
-export var maxspeed: = Vector2(400.0, 1000.0)
+export var speed: = Vector3(200.0, 500.0, 0.0)
+export var maxspeed: = Vector3(400.0, 1000.0, 0.0)
 export var gravity: = 400.0
 export var is_jump_interrupted: = false
-var velocity: = Vector2.ZERO
-const FLOOR_NORMAL: = Vector2.UP
+var velocity: = Vector3.ZERO
+const FLOOR_NORMAL: = Vector3.UP
 
 
 func _physics_process(delta):
-	velocity = move_and_slide(velocity, FLOOR_NORMAL)
+	velocity = move_and_slide(velocity, FLOOR_NORMAL, 0.0)
 	
 
 func calculate_move_velocity(
-	linear_velocity: Vector2,
-	direction: Vector2,
-	speed: Vector2,
+	linear_velocity: Vector3,
+	direction: Vector3,
+	speed: Vector3,
 	is_jump_interrupted: bool
-) -> Vector2:
+) -> Vector3:
 	var new_velocity = linear_velocity
 	new_velocity.x = speed.x * direction.x
 #	new_velocity.x = clamp(velocity.x + speed.x * direction.x, maxspeed.x * -1.0, maxspeed.x)

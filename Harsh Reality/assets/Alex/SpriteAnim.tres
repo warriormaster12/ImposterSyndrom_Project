@@ -91,9 +91,9 @@ animations = [ {
 "name": "Run",
 "speed": 24.0
 }, {
-"frames": [ ExtResource( 39 ), ExtResource( 63 ), ExtResource( 62 ), ExtResource( 64 ), ExtResource( 61 ), ExtResource( 57 ), ExtResource( 59 ), ExtResource( 58 ), ExtResource( 56 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 54 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 36 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 16 ), ExtResource( 31 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 32 ) ],
+"frames": [ ExtResource( 82 ), ExtResource( 80 ), ExtResource( 68 ), ExtResource( 81 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 75 ), ExtResource( 74 ), ExtResource( 78 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 79 ) ],
 "loop": true,
-"name": "Idle",
+"name": "Fire",
 "speed": 24.0
 }, {
 "frames": [ ExtResource( 83 ) ],
@@ -101,9 +101,9 @@ animations = [ {
 "name": "IdlePistol",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 82 ), ExtResource( 80 ), ExtResource( 68 ), ExtResource( 81 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 75 ), ExtResource( 74 ), ExtResource( 78 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 79 ) ],
+"frames": [ ExtResource( 39 ), ExtResource( 63 ), ExtResource( 62 ), ExtResource( 64 ), ExtResource( 61 ), ExtResource( 57 ), ExtResource( 59 ), ExtResource( 58 ), ExtResource( 56 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 54 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 36 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 16 ), ExtResource( 31 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 32 ) ],
 "loop": true,
-"name": "Fire",
+"name": "Idle",
 "speed": 24.0
 }, {
 "frames": [ ExtResource( 43 ) ],

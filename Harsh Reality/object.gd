@@ -1,4 +1,4 @@
-extends KinematicBody2d
+extends KinematicBody
 class_name Object
 
 

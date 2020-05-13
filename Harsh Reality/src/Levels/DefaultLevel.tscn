@@ -1,19 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
+[ext_resource path="res://src/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/LevelAssets/LevelAssetsLibrary.meshlib" type="MeshLibrary" id=6]
 
-[sub_resource type="CubeMesh" id=1]
-
-[sub_resource type="SpatialMaterial" id=2]
-albedo_color = Color( 0.882353, 0.117647, 0.117647, 1 )
-metallic = 0.58
-
 [node name="Level" type="Spatial"]
-
-[node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.07957, 1.92003, -2.90766 )
-mesh = SubResource( 1 )
-material/0 = SubResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.837357, 3.29009, 12.1283 )
@@ -29,3 +19,6 @@ data = {
 __meta__ = {
 "_editor_clip_": 0
 }
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43984, 4.82813, -1.96957 )
