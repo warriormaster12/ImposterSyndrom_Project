@@ -12,6 +12,14 @@ collision_mask = 24
 script = ExtResource( 2 )
 gravity = 1000.0
 
+[node name="Target" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.548, 10.5887 )
+
+[node name="InterpolatedCamera" type="InterpolatedCamera" parent="Target"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.67887 )
+target = NodePath("..")
+enabled = true
+
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 2, 0, 0, 0, 1, 0, -1.10863, 0 )
 shape = SubResource( 1 )
